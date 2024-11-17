@@ -1,10 +1,9 @@
 interface props {
   Icon: React.ElementType,
   title: string,
-  color: string
 }
 
-export const SkillCard = ({Icon, title, color}: props) => {
+export const SkillCard = ({Icon, title}: props) => {
   return (
     <div
       className="relative
@@ -19,7 +18,7 @@ export const SkillCard = ({Icon, title, color}: props) => {
       <div>
         <div className="h-auto overflow-hidden p-2 ">
           <div className="h-16 overflow-hidden relative ">
-            <Icon className={`w-full h-full ${color}`} />
+            <Icon className="w-full h-full text-white" />
           </div>
         </div>
           <h3 className="text-xl mb-2 font-medium text-white flex items-center justify-center">

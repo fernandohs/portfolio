@@ -32,217 +32,178 @@ import { TbBrandNuxt, TbBrandNextjs } from "react-icons/tb";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { CategorySkills } from "@/components/CategorySkills";
 import type Skill from "@/interfaces/skill";
+import Image from "next/image";
 
 interface CategorySkill {
   [key: string]: Skill[];
 }
 
-const skills: Skill[] = [
-  {
-    Icon: FaVuejs,
-    title: "Vue",
-    color: "text-green-400",
-    category: "front-end",
-  },
-  {
-    Icon: SiJquery,
-    title: "Vue",
-    color: "text-green-400",
-    category: "front-end",
-  },
-  {
-    Icon: FaReact,
-    title: "React",
-    color: "text-blue-400",
-    category: "front-end",
-  },
-  {
-    Icon: FaAngular,
-    title: "Angular",
-    color: "text-red-400",
-    category: "front-end",
-  },
-  {
-    Icon: TbBrandNuxt,
-    title: "Nuxt",
-    color: "text-blue-400",
-    category: "front-end",
-  },
-  {
-    Icon: TbBrandNextjs,
-    title: "Next",
-    color: "text-blue-400",
-    category: "front-end",
-  },
-  {
-    Icon: FaBootstrap,
-    title: "Bootstrap",
-    color: "text-pink-400",
-    category: "front-end",
-  },
-  {
-    Icon: FaSass,
-    title: "SASS",
-    color: "text-blue-400",
-    category: "front-end",
-  },
-  {
-    Icon: RiTailwindCssFill,
-    title: "Tailwind CSS",
-    color: "text-blue-400",
-    category: "front-end",
-  },
-  {
-    Icon: SiRedux,
-    title: "Redux",
-    color: "text-blue-400",
-    category: "front-end",
-  },
-  {
-    Icon: SiMui,
-    title: "Material UI",
-    color: "text-blue-400",
-    category: "front-end",
-  },
-  {
-    Icon: SiVuetify,
-    title: "Vuetify",
-    color: "text-blue-400",
-    category: "front-end",
-  },
+const skills: CategorySkill = {
+  FrontEnd: [
+    {
+      Icon: FaVuejs,
+      title: "Vue",
+    },
+    {
+      Icon: SiJquery,
+      title: "JQuery",
+    },
+    {
+      Icon: FaReact,
+      title: "React",
+    },
+    {
+      Icon: FaAngular,
+      title: "Angular",
+    },
+    {
+      Icon: TbBrandNuxt,
+      title: "Nuxt",
+    },
+    {
+      Icon: TbBrandNextjs,
+      title: "Next",
+    },
+    {
+      Icon: FaBootstrap,
+      title: "Bootstrap",
+    },
+    {
+      Icon: FaSass,
+      title: "SASS",
+    },
+    {
+      Icon: RiTailwindCssFill,
+      title: "Tailwind CSS",
+    },
+    {
+      Icon: SiRedux,
+      title: "Redux",
+    },
+    {
+      Icon: SiMui,
+      title: "Material UI",
+    },
+    {
+      Icon: SiVuetify,
+      title: "Vuetify",
+    },
+    {
+      Icon: FaFigma,
+      title: "Figma",
+    },
+    {
+      Icon: SiAdobexd,
+      title: "Adobe XD",
+    },
+  ],
+  BackEnd: [
+    {
+      Icon: FaLaravel,
+      title: "Laravel",
+    },
+    {
+      Icon: FaPython,
+      title: "Python",
+    },
+    {
+      Icon: DiDjango,
+      title: "Django",
+    },
+    {
+      Icon: FaNodeJs,
+      title: "Node",
+    },
+  ],
+  Database: [
+    {
+      Icon: SiMariadb,
+      title: "MariaDB",
+    },
+    {
+      Icon: SiPostgresql,
+      title: "PosgreSQL",
+    },
+    {
+      Icon: DiMsqlServer,
+      title: "SQL Server",
+    },
+    {
+      Icon: DiMongodb,
+      title: "SQL Server",
+    },
+    {
+      Icon: DiMysql,
+      title: "MySQL",
+    },
+  ],
+  Testing: [
+    {
+      Icon: SiCypress,
+      title: "Cypress",
+    },
+    {
+      Icon: SiJest,
+      title: "Jest",
+    },
+    {
+      Icon: SiTestinglibrary,
+      title: "React Testing Library",
+    },
+  ],
+  Languages: [
+    {
+      Icon: FaCss3,
+      title: "CSS",
+    },
+    {
+      Icon: FaHtml5,
+      title: "HTML",
+    },
+    {
+      Icon: FaJsSquare,
+      title: "JavaScript",
+    },
+    {
+      Icon: SiTypescript,
+      title: "Typescript",
+    },
+    {
+      Icon: FaPhp,
+      title: "PHP",
+    },
+    {
+      Icon: FaGitAlt,
+      title: "Git",
+    },
+  ],
+};
 
-  {
-    Icon: FaCss3,
-    title: "CSS",
-    color: "text-yellow-400",
-    category: "language",
-  },
-  {
-    Icon: FaHtml5,
-    title: "HTML",
-    color: "text-yellow-400",
-    category: "language",
-  },
-  {
-    Icon: FaJsSquare,
-    title: "JavaScript",
-    color: "text-yellow-400",
-    category: "language",
-  },
-  {
-    Icon: SiTypescript,
-    title: "Typescript",
-    color: "text-yellow-400",
-    category: "language",
-  },
-  { Icon: FaPhp, title: "PHP", color: "text-yellow-400", category: "back-end" },
-
-  {
-    Icon: SiMariadb,
-    title: "MariaDB",
-    color: "text-yellow-400",
-    category: "database",
-  },
-  {
-    Icon: SiPostgresql,
-    title: "PosgreSQL",
-    color: "text-yellow-400",
-    category: "database",
-  },
-  {
-    Icon: DiMsqlServer,
-    title: "SQL Server",
-    color: "text-yellow-400",
-    category: "database",
-  },
-  {
-    Icon: DiMongodb,
-    title: "SQL Server",
-    color: "text-yellow-400",
-    category: "database",
-  },
-  {
-    Icon: DiMysql,
-    title: "MySQL",
-    color: "text-blue-400",
-    category: "database",
-  },
-
-  {
-    Icon: FaLaravel,
-    title: "Laravel",
-    color: "text-yellow-400",
-    category: "back-end",
-  },
-  {
-    Icon: FaPython,
-    title: "Python",
-    color: "text-yellow-400",
-    category: "back-end",
-  },
-  {
-    Icon: DiDjango,
-    title: "Django",
-    color: "text-yellow-400",
-    category: "back-end",
-  },
-  {
-    Icon: FaNodeJs,
-    title: "Node",
-    color: "text-yellow-400",
-    category: "back-end",
-  },
-
-  {
-    Icon: SiCypress,
-    title: "Git",
-    color: "text-orange-400",
-    category: "testing",
-  },
-  {
-    Icon: SiJest,
-    title: "Jest",
-    color: "text-yellow-400",
-    category: "testing",
-  },
-  {
-    Icon: SiTestinglibrary,
-    title: "React Testing Library",
-    color: "text-red-400",
-    category: "testing",
-  },
-
-  {
-    Icon: FaGitAlt,
-    title: "Git",
-    color: "text-yellow-400",
-    category: "others",
-  },
-  {
-    Icon: FaFigma,
-    title: "Figma",
-    color: "text-yellow-400",
-    category: "others",
-  },
-  {
-    Icon: SiAdobexd,
-    title: "Adobe XD",
-    color: "text-yellow-400",
-    category: "others",
-  },
-];
-
-const skillsByCategory: CategorySkill = Object.groupBy(skills, ({ category }) => category);
+const skillsLength = Object.keys(skills).length
 
 export const SkillsPage = () => {
   return (
-    <div className="h-full flex flex-col items-center">
-      {Object.keys(skillsByCategory).map((category, index) => (
-        <CategorySkills
-          key={`category-skills-${index}`}
-          skills={skillsByCategory[category]}
-          title={category}
-        />
+    <div className="h-full flex flex-col items-center w-full px-14">
+      <h1 className="text-2xl md:text-5xl text-center my-10">
+        My Skills
+      </h1>
+
+      {Object.keys(skills).map((category, index) => (
+        <div className={`grid grid-cols-4 w-full py-10 ${index <= skillsLength - 2 && 'border-b-2 border-white'}`}>
+          <div className="col-span-1 flex items-center justify-center flex-col">
+            <Image
+              src={`/${category.toLowerCase()}.png`}
+              height={200}
+              width={200}
+              alt={category}
+            />
+            <h1 className="text-2xl md:text-4xl text-center">{category}</h1>
+          </div>
+          <CategorySkills
+            key={`category-skills-${index}`}
+            skills={skills[category]}
+          />
+        </div>
       ))}
     </div>
   );

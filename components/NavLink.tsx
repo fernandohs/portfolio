@@ -11,9 +11,8 @@ interface Props {
 export const NavLink = ({url, title} : Props) => {
   const currentPath = usePathname()
 
-
   return (
-    <Link className={`hover:font-bold rounded-lg p-3 ${currentPath === url && ''}`} href={url}>{title}</Link>
+    <Link className={`hover:font-bold rounded-lg p-3 ${currentPath === url && 'font-bold'}`} href={url}>{title}</Link>
   )
 }
 

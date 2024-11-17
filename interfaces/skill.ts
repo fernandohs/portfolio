@@ -1,8 +1,6 @@
 interface Skill {
   title: string,
-  Icon: React.ElementType,
-  color: string,
-  category: string,
+  Icon: React.ElementType
 }
 
 export default Skill;

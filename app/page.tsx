@@ -128,12 +128,12 @@ export default function HomePage() {
         </div>
 
 
-        <div className="flex flex-col w-full items-center justify-center bg-secondary mt-10">
+        <div className="flex flex-col w-full items-center justify-center bg-secondary py-10 mt-10">
           <h1 className="text-2xl">
             Let's talk!
           </h1>
 
-          <p className="w-1/4 text-center">
+          <p className="w-1/3 text-center">
           Have a project or idea you’d like to bring to life? Let’s work together to create innovative and impactful digital solutions. I’d love to hear from you!
           </p>
 

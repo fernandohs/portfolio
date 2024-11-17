@@ -1,22 +1,16 @@
-
-import { SkillCard } from '@/components';
-import type Skill from '@/interfaces/skill';
-
+import { SkillCard } from "@/components";
+import type Skill from "@/interfaces/skill";
 
 interface props {
-  skills: Skill[],
-  title: string,
+  skills: Skill[];
 }
 
-export const CategorySkills = ({skills, title}: props) => {
+export const CategorySkills = ({ skills }: props) => {
   return (
-    <div className="flex flex-row gap-8 w-full justify-center flex-wrap my-6">
-      <h2 className="mb-4 font-bold text-4xl flex w-full px-10 capitalize">
-        {title}
-      </h2>
+    <div className="col-span-3 flex flex-wrap  gap-4">
       {skills.map((item, index) => (
-          <SkillCard key={`${item.title}-${index}`} {...item} />
-        ))}
+        <SkillCard key={`skill-${item.title}-${index}`} {...item} />
+      ))}
     </div>
   );
 };
