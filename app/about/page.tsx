@@ -1,7 +1,7 @@
 export const AboutPage = () => {
   return (
-    <div>
-      About
+    <div className="h-full flex flex-col items-center">
+      XO
     </div>
   )
 }

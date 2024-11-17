@@ -13,7 +13,7 @@ export const NavLink = ({url, title} : Props) => {
 
 
   return (
-    <Link className={`hover:font-bold rounded-lg p-3 ${currentPath === url && 'bg-gray-300 text-black'}`} href={url}>{title}</Link>
+    <Link className={`hover:font-bold rounded-lg p-3 ${currentPath === url && ''}`} href={url}>{title}</Link>
   )
 }
 

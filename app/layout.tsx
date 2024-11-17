@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Navbar } from '@/components/Navbar';
+import { Navbar } from "@/components/Navbar";
+import { Footer } from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: "Fernando's Portfolio",
@@ -15,13 +16,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-primary antialiased`}>
-        <div className="w-screen h-screen bg-deepBlack">
-          <div className="h-24 flex md:justify-center xs:justify-start">
-            <Navbar/>
-          </div>
-          <div className="h-[calc(100vh-6rem)]">
-            {children}
-          </div>
+        <div className="w-screen h-screen bg-primary overflow-x-hidden	">
+          <Navbar />
+          <div className="h-100vh">{children}</div>
+          {/* <Footer/> */}
         </div>
       </body>
     </html>
