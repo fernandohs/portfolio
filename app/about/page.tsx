@@ -13,9 +13,9 @@ const hobbies = [
 
 export const AboutPage = () => {
   return (
-    <div className="h-full flex flex-col justify-center px-40">
-      <div className="flex items-center justify-center w-full">
-        <div className="flex flex-col xs:w-full md:w-1/3 items-center justify-center">
+    <div className="h-full flex flex-col justify-center xl:px-40 px-5">
+      <div className="flex flex-col md:flex-row md:items-center justify-center w-full">
+        <div className="flex flex-col w-full md:w-1/3 items-center justify-center">
           <Image
             src="/profile.png"
             alt=""
@@ -25,10 +25,10 @@ export const AboutPage = () => {
           />
         </div>
 
-        <div className="flex flex-col xs:w-full md:w-2/3">
-          <h1 className="text-4xl text-start">About me</h1>
+        <div className="flex flex-col w-full md:w-2/3">
+          <h1 className="text-2xl md:text-4xl text-start">About me</h1>
 
-          <p className="text-start my-10 max-w-[527px]">
+          <p className="text-start my-5 md:my-10 w-full max-w-[527px]">
             I'm a Senior Web Developer with over a decade of experience crafting
             scalable, user-focused digital solutions. I thrive on continuous
             improvement, applying best practices, and delivering high-quality
@@ -66,7 +66,7 @@ export const AboutPage = () => {
       </div>
 
       <VerticalTimeline />
-      <ContactBanner/>
+      <ContactBanner />
     </div>
   );
 };

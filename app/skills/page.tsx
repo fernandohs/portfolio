@@ -184,23 +184,25 @@ const skillsLength = Object.keys(skills).length;
 
 export const SkillsPage = () => {
   return (
-    <div className="h-full flex flex-col items-center w-full px-14">
-      <h1 className="text-2xl md:text-5xl text-center my-10">My Skills</h1>
+    <div className="h-full flex flex-col items-center w-full md:px-14">
+      <h1 className="text-2xl md:text-5xl text-center md:my-10">My Skills</h1>
 
       {Object.keys(skills).map((category, index) => (
         <div
-          className={`grid grid-cols-4 w-full py-10 ${
+          className={`grid grid-cols-1 md:grid-cols-4 w-full py-10 ${
             index <= skillsLength - 2 && "border-b-2 border-white"
           }`}
         >
-          <div className="col-span-1 flex items-center justify-center flex-col">
+          <div className="col-span-12 md:col-span-1 flex items-center justify-center flex-col">
             <Image
               src={`/${category.toLowerCase()}.png`}
               height={200}
               width={200}
               alt={category}
             />
-            <h1 className="text-2xl md:text-4xl text-center">{category}</h1>
+            <h1 className="text-2xl md:text-4xl text-center mb-3">
+              {category}
+            </h1>
           </div>
           <CategorySkills
             key={`category-skills-${index}`}

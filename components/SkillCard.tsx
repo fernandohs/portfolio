@@ -1,9 +1,9 @@
 interface props {
-  Icon: React.ElementType,
-  title: string,
+  Icon: React.ElementType;
+  title: string;
 }
 
-export const SkillCard = ({Icon, title}: props) => {
+export const SkillCard = ({ Icon, title }: props) => {
   return (
     <div
       className="relative
@@ -21,9 +21,9 @@ export const SkillCard = ({Icon, title}: props) => {
             <Icon className="w-full h-full text-white" />
           </div>
         </div>
-          <h3 className="text-xl mb-2 font-medium text-white flex items-center justify-center">
-            {title}
-          </h3>
+        <h3 className="text-xl mb-2 font-medium text-white flex items-center justify-center">
+          {title}
+        </h3>
       </div>
     </div>
   );

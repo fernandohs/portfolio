@@ -24,11 +24,10 @@ const projects = [
   },
 ]
 
-
 export const ProjectsPage = () => {
   return (
-    <div className="h-full flex flex-col items-center px-20">
-      <h1 className="text-2xl md:text-5xl text-center my-10">
+    <div className="h-full flex flex-col items-center px-5 xl:px-20">
+      <h1 className="text-2xl md:text-5xl text-center xl:my-10">
         Some of my projects
       </h1>
         {

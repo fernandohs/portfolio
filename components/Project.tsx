@@ -11,7 +11,7 @@ interface Props {
 export const Project = ({ id, title, description, addBorderBottom }: Props) => {
   return (
     <div
-      className={`grid grid-cols-2 w-full py-10 justify-end ${
+      className={`grid xl:grid-cols-2 w-full py-10 xl:justify-end ${
         addBorderBottom && "border-b"
       }`}
     >
@@ -26,7 +26,7 @@ export const Project = ({ id, title, description, addBorderBottom }: Props) => {
       <div className="col-span-1 flex flex-col py-5 justify-end">
         <h1 className="text-2xl md:text-3xl text-start">{title}</h1>
 
-        <p className="max-w-[700px] mt-3">{description}</p>
+        <p className="max-w-[700px] mt-3 text-justify">{description}</p>
 
         <Link
           href={`projects/${id}`}

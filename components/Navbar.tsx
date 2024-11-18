@@ -34,7 +34,7 @@ export const Navbar = () => {
       </div>
       <div className="md:hidden">
         <button
-          className="w-10 h-8 flex flex-col justify-between z-50 relative"
+          className="w-10 h-8 flex flex-col justify-between z-[70] relative"
           onClick={handleToggleMenu}
         >
           <div className="w-10 h-1 bg-white rounded"></div>
@@ -42,7 +42,7 @@ export const Navbar = () => {
           <div className="w-10 h-1 bg-white rounded"></div>
         </button>
         {isMenuOpen && (
-          <div className="absolute top-0 left-0 w-screen h-screen flex flex-col items-center justify-center bg-black text-white gap-8">
+          <div className="z-[60] absolute top-0 left-0 w-screen h-screen flex flex-col items-center justify-center bg-black text-white gap-8">
             {menuItems.map(({ url, title }) => (
               <Link href={url} key={title}>
                 {title}

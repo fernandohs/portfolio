@@ -7,7 +7,7 @@ interface props {
 
 export const CategorySkills = ({ skills }: props) => {
   return (
-    <div className="col-span-3 flex flex-wrap  gap-4">
+    <div className="col-span-3 flex flex-wrap md:gap-4 w-full justify-start">
       {skills.map((item, index) => (
         <SkillCard key={`skill-${item.title}-${index}`} {...item} />
       ))}

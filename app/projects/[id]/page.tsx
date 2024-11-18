@@ -22,18 +22,18 @@ export default async function ProjectPage({ params }: Props) {
   if (!project) notFound();
 
   return (
-    <div className="h-full flex flex-col items-center px-20">
-      <h1 className="text-2xl md:text-5xl my-10 text-start w-full">
+    <div className="h-full flex flex-col items-center px-5 xl:px-20 text-justify">
+      <h1 className="text-2xl md:text-5xl my-5 xl:my-10 text-start w-full">
         {project.title}
       </h1>
 
       <p>{project.description}</p>
 
       <div className="flex justify-start  w-full gap-10">
-        <h1 className="text-2xl md:text-3xl my-10 flex">
+        <h1 className="text-xl md:text-3xl my-10 flex">
           <span className="font-semibold">Role</span>: {project.role}
         </h1>
-        <h1 className="text-2xl md:text-3xl my-10 flex">
+        <h1 className="text-xl md:text-3xl my-10 flex">
           <span className="font-semibold">Industry</span>: {project.industry}
         </h1>
       </div>

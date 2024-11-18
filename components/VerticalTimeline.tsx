@@ -7,7 +7,7 @@ const projects = [
     role: "Front End Developer",
   },
   {
-    title: "SofiaXT - Smartbooks",
+    title: "SofiaXT",
     dateBetween: "2021 - 2022",
     role: "Front End Developer",
   },

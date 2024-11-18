@@ -59,7 +59,7 @@ export default function HomePage() {
     <div className="h-full flex flex-col lg:flex-row  justify-center px-10">
       <div className="flex flex-wrap items-center justify-center w-full">
         <div
-          className="flex flex-col w-full items-center justify-center p-44"
+          className="flex flex-col w-full items-center justify-center xl:p-44 xs:p-0"
           style={{
             backgroundImage: "url(/circulo.png)",
             backgroundSize: "contain",
@@ -67,24 +67,24 @@ export default function HomePage() {
             backgroundRepeat: "no-repeat",
           }}
         >
-          <h1 className="text-2xl md:text-4xl text-center">
+          <h1 className="text-2xl xl:text-4xl text-center">
             Hi, my name is Fernando!
           </h1>
 
-          <p className="text-2xl md:text-4xl text-center max-w-[500px]">
+          <p className="text-2xl xl:text-4xl text-center xl:max-w-[500px]">
             I’m a Passionate Senior Web Developer
           </p>
 
-          <p className="text-xl mt-5 text-center w-3/5 ">
+          <p className="xl:text-xl mt-5 text-center xl:w-3/5 ">
             With over 10 years of experience in designing and building scalable,
             user-centered digital solutions, I am dedicated to continuous
             improvement, adhering to best practices, and delivering high-quality
             software.
           </p>
 
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 w-full items-center">
             <Link href="/projects">
-              <button className="transition ease-in-out delay-75 mt-10 p-2 rounded-sm border border-white w-36 hover:bg-white hover:text-primary">
+              <button className="transition ease-in-out delay-75 mt-10 p-2 rounded-sm border border-white w-full xl:w-36 hover:bg-white hover:text-primary">
                 See projects
               </button>
             </Link>
@@ -93,9 +93,12 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="flex flex-col xs:w-full md:w-1/2 items-center justify-center  pl-3 ">
-          <h1 className="text-4xl">My core skills</h1>
-          <p className="">
+        <div className="flex flex-col w-full items-center justify-center  xl:pl-3 xl:w-1/2">
+          <h1 className="text-2xl xl:text-4xl">
+            My core skills
+          </h1>
+
+          <p className="my-2">
             I offer a range of answers, each tailored to meet your unique needs
             and aid in achieving your business goals.. I offer a range of
             answers, each tailored to meet your unique needs and aid in
@@ -107,28 +110,28 @@ export default function HomePage() {
             and aid in achieving your business goals.
           </p>
 
-          <div className="flex flex-row">
+          <div className="grid grid-cols-2 xl:flex xl:flex-row justify-center max-sm:flex-wrap">
             {skills.map((item, index) => (
               <SkillCard key={`skills-${index}`} {...item} />
             ))}
           </div>
 
           <div className="my-4 flex justify-start w-full">
-            <button className=" p-1 rounded-sm border border-white w-56">
+            <button className=" p-1 rounded-sm border border-white w-full xl:w-56">
               Find out more
             </button>
           </div>
         </div>
 
-        <div className="flex flex-col xs:w-full md:w-1/2 items-center justify-center  ">
-          <div className="grid  md:gap-16 xs:grid-cols-1 md:grid-cols-2">
+        <div className="flex flex-col w-full xl:w-1/2 items-center justify-center my-5">
+          <div className="grid gap-16 grid-cols-2 xl:grid-cols-2">
             {coreSkills.map((item) => (
               <CoreSkill key={`core-skill-${item.title}`} {...item} />
             ))}
           </div>
         </div>
 
-        <div className="flex flex-col xs:w-full md:w-1/2 items-center justify-center pl-3">
+        <div className="flex flex-col w-full xl:w-1/2 items-center justify-center pl-3">
           <Image
             src="/project-1.png"
             alt=""
@@ -139,11 +142,13 @@ export default function HomePage() {
           />
         </div>
 
-        <div className="flex flex-col xs:w-full md:w-1/2 items-start justify-center pl-10">
-          <h1 className="text-4xl">let's have a look at my portfolio</h1>
+        <div className="flex flex-col w-full xl:w-1/2 xl:items-start items-center justify-center pl-3 xl:pl-10 mt-5">
+          <h1 className="text-2xl xl:text-4xl">
+            let's have a look at my portfolio
+          </h1>
 
           <Link href="/projects">
-            <button className=" transition ease-in-out delay-75 mt-10 p-2 rounded-sm border border-white w-55 hover:bg-white hover:text-primary">
+            <button className="transition ease-in-out delay-75 mt-10 p-2 rounded-sm border border-white w-80 xl:w-55 hover:bg-white hover:text-primary">
               See projects
             </button>
           </Link>
