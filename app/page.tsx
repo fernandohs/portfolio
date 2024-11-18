@@ -113,8 +113,7 @@ export default function HomePage() {
         </div>
 
         <div className="flex flex-col xs:w-full md:w-1/2 items-center justify-center pl-3">
-          <Image src="/project1.png" alt="" width="700" height="700"  className=""/>
-          
+          <Image src="/project-1.png" alt="" width="700" height="700"  className=""/>
         </div>
 
         <div className="flex flex-col xs:w-full md:w-1/2 items-center justify-center">

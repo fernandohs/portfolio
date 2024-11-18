@@ -1,0 +1,35 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "role": "Front End",
+      "industry": "Education",
+      "title": "SofiaXT - WhatIf",
+      "description": "Tool that allows students to create essays based on historical cases, where they must defend their positions using well-reasoned arguments. The process involves teamwork, with each team member writing an individual essay and ultimately contributing to a collaborative group essay. Two teams are formed, each taking opposing stances—either in favor or against a given topic—fostering critical thinking and debate skills.",
+      "challenge": "The main challenge for this project was creating an intuitive and user-friendly interface that facilitated seamless collaboration among team members. Ensuring the platform could effectively handle individual and collaborative essay writing, while providing clear visual feedback on team progress.Integrating features like argument structuring, real-time updates, and role-specific permissions posed technical complexities that needed to align with the educational focus of the tool. Achieving a balance between functionality and accessibility was key to delivering an engaging and efficient user experience for students and educators alike.",
+      "solution": "The solution was implemented using efficient front-end development practices to ensure seamless functionality and responsiveness. Advanced JavaScript frameworks were used to enable real-time updates and dynamic data handling, allowing students to see immediate feedback on their progress. \n \n Modular and reusable components were developed to handle individual and collaborative essay submissions, ensuring maintainability and scalability of the codebase. Features like role-specific access and team-based collaboration were integrated with robust state management, providing a smooth and error-free user experience. This front-end approach ensured the platform was not only visually engaging but also technically robust and efficient for handling complex educational workflows.",
+      "systemImages": [
+        "/project-1-system-1.png",
+        "/project-1-system-2.png"
+      ],
+      "keyAways": [
+        {
+          "key": "Real-Time Updates",
+          "description": "Implemented dynamic data handling to ensure seamless real-time collaboration and feedback for students."
+        },
+        {
+          "key": "Scalable Architecture",
+          "description": "Developed modular and reusable front-end components to support future scalability and maintainability."
+        },
+        {
+          "key": "Role-Based Functionality",
+          "description": "Integrated role-specific access and permissions, ensuring smooth and efficient workflows for both students and educators."
+        },
+        {
+          "key": "Performance Optimization",
+          "description": "Focused on responsive design and efficient state management to deliver a fast and error-free user experience across devices."
+        }
+      ]
+    }
+  ]
+}

@@ -3,6 +3,7 @@ export * from './CoreSkill';
 export * from './Footer';
 export * from './NavLink';
 export * from './Navbar';
+export * from './Project';
 export * from './SkillCard';
 export * from './VerticalTimeline';
 export * from './VerticalTimelineProject';
