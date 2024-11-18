@@ -2,24 +2,29 @@ import { VerticalTimelineProject } from "@/components";
 
 const projects = [
   {
-    title: "SofiaXT - Smartbooks",
-    dateBetween: "2020 - 2021",
+    title: "3Pillar",
+    dateBetween: "2022 - present",
     role: "Front End Developer",
   },
   {
     title: "SofiaXT - Smartbooks",
-    dateBetween: "2020 - 2021",
+    dateBetween: "2021 - 2022",
     role: "Front End Developer",
   },
   {
-    title: "SofiaXT - Smartbooks",
-    dateBetween: "2020 - 2021",
-    role: "Front End Developer",
+    title: "University Kino",
+    dateBetween: "2018 - 2021",
+    role: "Full Stack Developer",
   },
   {
-    title: "SofiaXT - Smartbooks",
-    dateBetween: "2020 - 2021",
-    role: "Front End Developer",
+    title: "Suspiros Pastelerias",
+    dateBetween: "2015 - 2018",
+    role: "Full Stack Developer",
+  },
+  {
+    title: "Freelance",
+    dateBetween: "2013 - present",
+    role: "Full Stack Developer",
   },
 ];
 

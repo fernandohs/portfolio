@@ -19,7 +19,8 @@ export default function RootLayout({
         <div className="w-screen h-screen bg-primary overflow-x-hidden	">
           <Navbar />
           <div className="h-100vh">{children}</div>
-          {/* <Footer/> */}
+          <div className="my-10"></div>
+          <Footer/>
         </div>
       </body>
     </html>

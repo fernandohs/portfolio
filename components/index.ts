@@ -1,4 +1,5 @@
 export * from './CategorySkills';
+export * from './ContactBanner';
 export * from './CoreSkill';
 export * from './Footer';
 export * from './NavLink';

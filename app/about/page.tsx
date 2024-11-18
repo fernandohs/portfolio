@@ -1,4 +1,4 @@
-import { VerticalTimeline } from '@/components';
+import { ContactBanner, VerticalTimeline } from "@/components";
 import Image from "next/image";
 
 const hobbies = [
@@ -58,12 +58,15 @@ export const AboutPage = () => {
       <div className="flex flex-col items-center justify-center w-full">
         <h1 className="text-4xl text-start">Profesional Journey</h1>
 
-        <button className="p-1 rounded-sm border border-white w-52 my-5">
-          Download resume
-        </button>
+        <a href="/resume.pdf" download="resume.pdf">
+          <button className="transition ease-in-out delay-75 p-1 rounded-sm border border-white hover:bg-white hover:text-primary w-52 my-5">
+            Download resume
+          </button>
+        </a>
       </div>
 
-      <VerticalTimeline/>
+      <VerticalTimeline />
+      <ContactBanner/>
     </div>
   );
 };

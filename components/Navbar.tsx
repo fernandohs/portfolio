@@ -1,6 +1,7 @@
 "use client";
 
 import NavLink from "@/components/NavLink";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -19,12 +20,17 @@ export const Navbar = () => {
   };
 
   return (
-
     <div className="py-3 px-5 bg-transparent ">
-      <div className="items-center text-xl justify-end hidden md:flex ">
-        {menuItems.map((item) => (
-          <NavLink key={item.title} {...item} />
-        ))}
+      <div className="items-center text-xl justify-between hidden md:flex ">
+        <Link href="/">
+          <Image alt="logo" src="/logo.png" height="76" width="63"  className="w-full h-auto" priority/>
+        </Link>
+
+        <div className="flex gap-4">
+          {menuItems.map((item) => (
+            <NavLink key={item.title} {...item} />
+          ))}
+        </div>
       </div>
       <div className="md:hidden">
         <button

@@ -1,3 +1,4 @@
+import { ContactBanner } from '@/components';
 import { Project } from '@/components/Project';
 
 const projects = [
@@ -33,6 +34,7 @@ export const ProjectsPage = () => {
         {
           projects.map((item, index) => <Project key={`project-${item.id}`} {...item} addBorderBottom={ index < projects.length - 1}/> )
         }
+        <ContactBanner/>
     </div>
   );
 };

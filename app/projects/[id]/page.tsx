@@ -62,7 +62,7 @@ export default async function ProjectPage({ params }: Props) {
         {project.systemImages.map((urlImage, index) => (
           <Image
             alt="company"
-            className="my-3 rounded-md"
+            className="my-3 rounded-md w-full h-auto"
             height={500}
             key={`${urlImage}-${index}`}
             priority

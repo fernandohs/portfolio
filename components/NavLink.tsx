@@ -12,7 +12,7 @@ export const NavLink = ({url, title} : Props) => {
   const currentPath = usePathname()
 
   return (
-    <Link className={`hover:font-bold rounded-lg p-3 ${currentPath === url && 'font-bold'}`} href={url}>{title}</Link>
+    <Link className={`hover:font-bold p-3 ${currentPath === url && 'border-b-2 border-white'}`} href={url}>{title}</Link>
   )
 }
 
