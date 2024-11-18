@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom'
 import { render, screen } from '@testing-library/react'
-import {SkillsPage} from '@/app/skills/page'
+import SkillsPage from '@/app/skills/page'
 import { describe } from 'node:test';
 
 describe('SkillsPage', () => {
