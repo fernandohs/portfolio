@@ -134,7 +134,7 @@ export default function HomePage() {
         <div className="flex flex-col w-full xl:w-1/2 items-center justify-center pl-3">
           <Image
             src="/project-1.png"
-            alt=""
+            alt="project-1-image"
             width="700"
             height="700"
             className="w-full h-auto"

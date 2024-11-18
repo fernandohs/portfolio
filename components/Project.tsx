@@ -30,7 +30,7 @@ export const Project = ({ id, title, description, addBorderBottom }: Props) => {
 
         <Link
           href={`projects/${id}`}
-          className="mt-10 p-2 rounded-sm border border-white w-36 text-center hover:bg-white hover:text-primary"
+          className="mt-10 p-2 rounded-sm border border-white w-36 text-center hover:bg-white hover:text-primary transition ease-in-out delay-75"
         >
           See project
         </Link>

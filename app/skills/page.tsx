@@ -189,6 +189,7 @@ export const SkillsPage = () => {
 
       {Object.keys(skills).map((category, index) => (
         <div
+          key={`category-skill-${index}`}
           className={`grid grid-cols-1 md:grid-cols-4 w-full py-10 ${
             index <= skillsLength - 2 && "border-b-2 border-white"
           }`}
