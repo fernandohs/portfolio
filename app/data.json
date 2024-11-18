@@ -30,6 +30,105 @@
           "description": "Focused on responsive design and efficient state management to deliver a fast and error-free user experience across devices."
         }
       ]
+    },
+    {
+      "id": "2",
+      "role": "Front End",
+      "industry": "Media",
+      "title": "3Pillar - Telegraph - Newspaper",
+      "description": "The Telegraph's digital platform is powered by Adobe Experience Manager (AEM), a sophisticated content management system (CMS) designed to handle high-traffic websites and deliver personalized, high-quality user experiences. The system facilitates the creation, management, and distribution of a wide range of content types, including articles, multimedia, and interactive features, while ensuring seamless integration with marketing and analytics tools.",
+      "challenge": "The system provides advertisers with unified, precise, and de-duplicated metrics to understand campaign performance comprehensively. It integrates advanced tools like real-time analytics and audience segmentation, enabling local and regional advertisers to maximize their campaigns' reach and effectiveness.",
+      "solution": "The Telegraph’s digital platform was enhanced with interactive tools that allowed users to provide feedback on content through ratings and comments, enabling the collection of real-time insights on audience preferences.\n\nThese tools helped measure user sentiment and engagement, offering valuable data for optimizing content strategies. The system also supported seamless integration with marketing and analytics tools to personalize the user experience, while maintaining high performance with fast load times and compatibility across devices. Built with Adobe Experience Manager (AEM), the solution ensured a smooth content management workflow for articles, multimedia, and interactive features.",
+      "systemImages": [
+        "/project-2-system-1.png",
+        "/project-2-system-2.png"
+      ],
+      "keyAways": [
+        {
+          "key": "User Feedback Tools",
+          "description": "Developed interactive features for users to rate and comment on content, providing real-time insights into audience preferences."
+        },
+        {
+          "key": "Content Optimization",
+          "description": "Enabled data collection to measure user sentiment, supporting data-driven improvements to content strategies."
+        },
+        {
+          "key": "Seamless Integration",
+          "description": "Integrated marketing and analytics tools to personalize user experiences and drive engagement."
+        },
+        {
+          "key": "High Performance",
+          "description": "Ensured fast loading times, cross-device compatibility, and smooth content management workflows using Adobe Experience Manager (AEM)"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "role": "Front End",
+      "industry": "Media",
+      "title": "3Pillar - CSM - Report System",
+      "description": "The Cross Screen Media reporting system is a robust analytics platform designed to measure and optimize advertising campaigns across multiple channels, including Connected TV (CTV), linear TV, and digital platforms.",
+      "challenge": "The main challenge of this project was unifying and deduplicating data from diverse platforms, including CTV, linear TV, and digital channels, to provide advertisers with actionable insights. Ensuring real-time analytics, accurate audience segmentation, and seamless integration across systems required innovative solutions to optimize campaign performance and support data-driven decision-making.",
+      "solution": "The solution for the Cross Screen Media reporting system was designed to deliver a seamless and intuitive user experience for advertisers managing campaign performance across multiple platforms.\n\nThe interface provides clear, data-driven visualizations such as audience reach graphs and performance metrics, enabling users to quickly analyze key trends. Interactive elements, like filters for markets and baselines, allow advertisers to customize their views and access actionable insights in real-time.\n\nThe design prioritizes usability, with a responsive layout and organized data tables that streamline navigation and decision-making, ensuring users can efficiently optimize their advertising strategies.",
+      "systemImages": [
+        "/project-3-system-1.png"
+      ],
+      "keyAways": [
+        {
+          "key": "Unified Metrics",
+          "description": "Streamlined data from CTV, linear TV, and digital platforms for comprehensive performance analysis."
+        },
+        {
+          "key": "User-Centered Front-End",
+          "description": "Intuitive design with interactive filters, responsive layouts, and clear data visualizations."
+        },
+        {
+          "key": "Real-Time Insights",
+          "description": "Integrated analytics tools provide up-to-date audience segmentation and campaign performance metrics."
+        },
+        {
+          "key": "Scalable Design",
+          "description": "Built to accommodate local and regional advertising needs with adaptability for various markets."
+        },
+        {
+          "key": "Enhanced Decision-Making",
+          "description": "Facilitates media planning with precise, de-duplicated metrics and streamlined workflows."
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "role": "Front End",
+      "industry": "Education",
+      "title": "SofiaXT - QualifyXT",
+      "description": "A comprehensive tool designed specifically for teachers, providing robust features to effectively manage student groups, assign tasks, and customize grading methods according to their needs. This tool also enables educators to streamline the process of generating detailed grade reports, offering insights into the performance of each student within their respective groups. By simplifying these essential tasks, it helps teachers save time, stay organized, and focus more on delivering quality education.",
+      "challenge": "The challenge of this project was to develop a dynamic and responsive interface that seamlessly handled complex functionalities such as group management, task assignments, and customized grading systems. Real-time data updates required efficient implementation to ensure smooth interactions for users. Creating flexible tools for grading customization and integrating them with detailed performance reporting systems added another layer of complexity, demanding a scalable and maintainable approach. Ensuring the platform was intuitive, efficient, and accessible across various devices was critical to supporting the diverse needs of educators.",
+      "solution": "The solution involved creating a dynamic and interactive interface that allowed educators to easily configure grading rubrics for each evaluation period. The development process focused on building modular components capable of handling real-time updates and user inputs, such as adding, editing, and weighting categories.\n\nSmooth navigation was ensured through a clean layout with intuitive controls, like toggles for extra points and responsive data tables. State management was optimized to handle complex interactions without compromising performance, while ensuring seamless integration with backend systems for storing and retrieving configuration data. This approach provided educators with a flexible and user-friendly tool to simplify their grading workflows.",
+      "systemImages": [
+        "/project-4-system-1.png"
+      ],
+      "keyAways": [
+        {
+          "key": "Dynamic Grading Configuration",
+          "description": "Developed an intuitive interface for educators to create, edit, and weight grading categories for each evaluation period in real-time."
+        },
+        {
+          "key": "Modular Component Design",
+          "description": "Implemented reusable and scalable components to streamline development and ensure maintainability across the platform."
+        },
+        {
+          "key": "Enhanced User Interaction",
+          "description": "Integrated interactive features, such as toggles for extra points and responsive data tables, to simplify complex grading workflows."
+        },
+        {
+          "key": "Optimized State Management",
+          "description": "Ensured smooth handling of real-time updates and user inputs while maintaining high performance and responsiveness."
+        },
+        {
+          "key": "Seamless Backend Integration",
+          "description": "Facilitated efficient data storage and retrieval for grading configurations, ensuring accurate synchronization between the front-end and backend systems."
+        }
+      ]
     }
   ]
 }
