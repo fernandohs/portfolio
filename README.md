@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# **Fernando's Portfolio**
 
-## Getting Started
+A personal portfolio built using **Next.js**, designed to showcase projects, skills, and experience in a clean and modern interface.
+
+## **Overview**
+
+This project serves as a professional portfolio to display personal achievements, skills, and completed projects. It includes the following key features:
+
+- Dynamic project pages.
+- Core skills and categories.
+- Modern responsive design.
+- Easy-to-navigate sections like Home, About, Skills, and Projects.
+- Built with Next.js and styled with TailwindCSS
+
+---
+
+## **Getting Started**
+
+Follow these instructions to set up and run the project locally.
+
+### **Prerequisites**
+
+Ensure you have the following installed on your machine:
+
+- [Node.js](https://nodejs.org/) (v18.18 or higher recommended)
+- [npm](https://www.npmjs.com/) (bundled with Node.js)
+
+---
+
+### **Installation**
+
+First, run the development server:
+
+```bash
+npm install
+```
+### **Run Aplication**
 
 First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### **Run Tests**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+First, run the development server:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run test
+```
 
-## Learn More
+## **Dependencies**
 
-To learn more about Next.js, take a look at the following resources:
+Here are the key dependencies used in this project:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### **Main Dependencies**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **`next`**: Framework for React applications.
+- **`react`**: JavaScript library for building user interfaces.
+- **`react-dom`**: Entry point for DOM rendering in React.
+- **`react-icons`**: Icon library for React components.
 
-## Deploy on Vercel
+### **Styling**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **`tailwindcss`**: Utility-first CSS framework for styling.
+- **`postcss`**: Tool for transforming CSS with JavaScript plugins.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### **Typography**
+
+This project uses multiple font sources:
+
+- **`@fontsource/montserrat`**
+- **`@fontsource/open-sans`**
+- **`@fontsource/poppins`**
+- **`@fontsource/roboto`**
+
+### **Testing**
+
+- **`jest`**: JavaScript testing framework.
+- **`@testing-library/react`**: Testing utilities for React components.
+- **`@testing-library/jest-dom`**: Custom matchers for DOM nodes in Jest.
+
+### **Development Tools**
+
+- **`eslint`**: Code quality tool.
+- **`typescript`**: TypeScript for static typing.
+
