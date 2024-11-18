@@ -12,26 +12,18 @@ const skills: Skill[] = [
   {
     Icon: FaCss3,
     title: "CSS",
-    color: "text-white",
-    category: "front-end",
   },
   {
     Icon: FaHtml5,
     title: "HTML",
-    color: "text-white",
-    category: "front-end",
   },
   {
     Icon: FaJsSquare,
     title: "JavaScript",
-    color: "text-white",
-    category: "front-end",
   },
   {
     Icon: SiTypescript,
     title: "TypeScript",
-    color: "text-white",
-    category: "front-end",
   },
 ];
 
@@ -56,10 +48,10 @@ const coreSkills: CoreSkillI[] = [
 
 export default function HomePage() {
   return (
-    <div className="h-full flex flex-col lg:flex-row  justify-center px-10">
+    <div className="h-full flex flex-col lg:flex-row  justify-center md:px-20  px-10">
       <div className="flex flex-wrap items-center justify-center w-full">
         <div
-          className="flex flex-col w-full items-center justify-center xl:p-44 xs:p-0"
+          className="flex flex-col w-full items-center justify-center xl:p-52 md:p-32 p-0"
           style={{
             backgroundImage: "url(/circulo.png)",
             backgroundSize: "contain",

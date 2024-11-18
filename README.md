@@ -32,7 +32,7 @@ Ensure you have the following installed on your machine:
 First, run the development server:
 
 ```bash
-npm install
+npm install --force
 ```
 ### **Run Aplication**
 

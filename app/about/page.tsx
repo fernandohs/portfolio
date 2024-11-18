@@ -11,7 +11,7 @@ const hobbies = [
   "Reading",
 ];
 
-export const AboutPage = () => {
+const AboutPage = () => {
   return (
     <div className="h-full flex flex-col justify-center xl:px-40 px-5">
       <div className="flex flex-col md:flex-row md:items-center justify-center w-full">

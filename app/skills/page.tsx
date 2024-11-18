@@ -182,7 +182,7 @@ const skills: CategorySkill = {
 
 const skillsLength = Object.keys(skills).length;
 
-export const SkillsPage = () => {
+const SkillsPage = () => {
   return (
     <div className="h-full flex flex-col items-center w-full md:px-14">
       <h1 className="text-2xl md:text-5xl text-center md:my-10">My Skills</h1>
