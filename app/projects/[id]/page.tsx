@@ -19,7 +19,7 @@ export default async function ProjectPage({ params }: Props) {
   const { id } = await params;
   const project = await getData(id);
 
-  if (!project) notFound();
+  if (!project) return notFound();
 
   return (
     <div className="h-full flex flex-col items-center px-5 xl:px-20 text-justify">
@@ -31,7 +31,7 @@ export default async function ProjectPage({ params }: Props) {
 
       <div className="flex justify-start  w-full gap-10">
         <h1 className="text-xl md:text-3xl my-10 flex">
-          <span className="font-semibold">Role</span>: {project.role}
+          <span className="font-semibold">Role</span>:<span>{project.role}</span>
         </h1>
         <h1 className="text-xl md:text-3xl my-10 flex">
           <span className="font-semibold">Industry</span>: {project.industry}
@@ -78,7 +78,7 @@ export default async function ProjectPage({ params }: Props) {
         <ul className="list-outside  list-disc w-full pl-10">
           {project.keyAways.map(({ key, description }, index) => (
             <li key={`${key}-${index}`} className="my-2">
-              <span className="font-semibold">{key}</span>: {description}
+              <span className="font-semibold">{key}</span>: <span>{description}</span>
             </li>
           ))}
         </ul>
