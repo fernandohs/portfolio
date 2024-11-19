@@ -28,14 +28,14 @@ const AboutPage = () => {
         <div className="flex flex-col w-full md:w-2/3">
           <h1 className="text-2xl md:text-4xl text-start">About me</h1>
 
-          <p className="text-start my-5 md:my-10 w-full max-w-[527px]">
+          <p className="text-start my-5 md:my-10 w-full">
             I'm a Senior Web Developer with over a decade of experience crafting
             scalable, user-focused digital solutions. I thrive on continuous
             improvement, applying best practices, and delivering high-quality
             software that meets and exceeds expectations.
           </p>
 
-          <p className="text-start max-w-[527px]">
+          <p className="text-start">
             My expertise spans educational platforms, ERP, and CRM systems, and
             I bring strong communication, organizational, and leadership skills
             to every project. Whether collaborating with a team or working

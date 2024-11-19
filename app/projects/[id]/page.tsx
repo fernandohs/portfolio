@@ -2,6 +2,7 @@ import Image from "next/image";
 import { promises as fs } from "fs";
 import type { Data, Project } from "@/interfaces";
 import { notFound } from "next/navigation";
+import { ContactBanner } from '@/components';
 
 interface Props {
   params: { id: string };
@@ -48,16 +49,16 @@ export default async function ProjectPage({ params }: Props) {
           width={1200}
         />
 
-        <h1 className="text-2xl md:text-3xl my-5 flex w-full font-semibold">
+        <h1 className="text-2xl md:text-3xl mb-5 mt-10  xl:mt-32 flex w-full font-semibold">
           Challenge
         </h1>
         <p>{project.challenge}</p>
 
-        <h1 className="text-2xl md:text-3xl my-5 flex w-full font-semibold">
+        <h1 className="text-2xl md:text-3xl mb-5 mt-10 xl:mt-16 flex w-full font-semibold">
           Solution
         </h1>
 
-        <p className="whitespace-pre-line break-words">{project.solution}</p>
+        <p className="whitespace-pre-line break-words mb-5 xl:mb-16">{project.solution}</p>
 
         {project.systemImages.map((urlImage, index) => (
           <Image
@@ -71,7 +72,7 @@ export default async function ProjectPage({ params }: Props) {
           />
         ))}
 
-        <h1 className="text-2xl md:text-3xl  flex w-full font-semibold">
+        <h1 className="text-2xl md:text-3xl mt-10 xl:mt-16  flex w-full font-semibold">
           Key takeaways
         </h1>
 
@@ -82,6 +83,8 @@ export default async function ProjectPage({ params }: Props) {
             </li>
           ))}
         </ul>
+
+        <ContactBanner />
       </div>
     </div>
   );
