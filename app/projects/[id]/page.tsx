@@ -4,17 +4,41 @@ import type { Data, Project } from "@/interfaces";
 import { notFound } from "next/navigation";
 import { ContactBanner } from '@/components';
 
-interface Props {
-  params: Promise<{ id: string }>;
+interface Params {
+  id: string;
 }
+
+interface Props {
+  params: Promise<Params>;
+}
+
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
 async function getData(id: string): Promise<Project | undefined> {
-  const file = await fs.readFile(process.cwd() + "/app/data.json", "utf8");
-  const data: Data = JSON.parse(file);
-  return data.projects.find((item) => item.id === id);
+  const isDevelopment = process.env.NODE_ENV === "development";
+  const filePath = isDevelopment
+    ? process.cwd() + "/app/data.json"
+    : `${baseUrl}/data.json`;
+
+  try {
+    if (isDevelopment) {
+      const file = await fs.readFile(filePath, "utf8");
+      const data: Data = JSON.parse(file);
+      return data.projects.find((item) => item.id === id);
+    } else {
+      const response = await fetch(filePath);
+      if (!response.ok) throw new Error("Error fetching remote data.json");
+
+      const data: Data = await response.json();
+      return data.projects.find((item) => item.id === id);
+    }
+  } catch (error) {
+    console.error("Error obteniendo datos:", error);
+    return undefined;
+  }
 }
 
-export default async function ProjectPage({ params }: Props) {
+export default async function ProjectPage( {params}: Props ) {
   const { id } = await params; 
   const project = await getData(id);
 
