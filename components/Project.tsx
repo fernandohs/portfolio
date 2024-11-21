@@ -17,7 +17,7 @@ export const Project = ({ id, title, description, addBorderBottom }: Props) => {
     >
       <div className="col-span-1 flex items-center justify-center flex-col">
         <Image
-          src={`/project-${id}.png`}
+          src={`/projects/project-${id}.png`}
           height={405}
           width={600}
           alt={`Project ${title}`}

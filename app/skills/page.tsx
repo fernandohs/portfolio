@@ -196,7 +196,7 @@ const SkillsPage = () => {
         >
           <div className="col-span-12 md:col-span-1 flex items-center justify-center flex-col">
             <Image
-              src={`/${category.toLowerCase()}.png`}
+              src={`/skills/${category.toLowerCase()}.png`}
               height={200}
               width={200}
               alt={category}

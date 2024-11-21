@@ -125,7 +125,7 @@ export default function HomePage() {
 
         <div className="flex flex-col w-full xl:w-1/2 items-center justify-center pl-3 xl:mt-32">
           <Image
-            src="/project-1.png"
+            src="/projects/project-1.png"
             alt="project-1-image"
             width="700"
             height="700"
@@ -136,7 +136,7 @@ export default function HomePage() {
 
         <div className="flex flex-col w-full xl:w-1/2 xl:items-start items-center justify-center pl-3 xl:pl-36 mt-5 xl:mt-32">
           <h1 className="text-2xl xl:text-4xl">
-            Let's have a look at my portfolio
+            Let&apos;s have a look at my portfolio
           </h1>
 
           <Link href="/projects">

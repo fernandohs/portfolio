@@ -45,7 +45,7 @@ export default async function ProjectPage({ params }: Props) {
           className="rounded-md"
           height={500}
           priority
-          src={`/project-${project.id}-company.png`}
+          src={`/projects/project-${project.id}-company.png`}
           width={1200}
         />
 
@@ -67,7 +67,7 @@ export default async function ProjectPage({ params }: Props) {
             height={500}
             key={`${urlImage}-${index}`}
             priority
-            src={urlImage}
+            src={`/projects${urlImage}`}
             width={1200}
           />
         ))}
