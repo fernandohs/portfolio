@@ -29,7 +29,7 @@ const AboutPage = () => {
           <h1 className="text-2xl md:text-4xl text-start">About me</h1>
 
           <p className="text-start my-5 md:my-10 w-full">
-            I'm a Senior Web Developer with over a decade of experience crafting
+            I&apos;m a Senior Web Developer with over a decade of experience crafting
             scalable, user-focused digital solutions. I thrive on continuous
             improvement, applying best practices, and delivering high-quality
             software that meets and exceeds expectations.

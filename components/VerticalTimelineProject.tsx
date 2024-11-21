@@ -1,6 +1,6 @@
 interface Props {
   dateBetween: string,
-  isLeftContent: Boolean,
+  isLeftContent: boolean,
   role: string,
   title: string,
 }

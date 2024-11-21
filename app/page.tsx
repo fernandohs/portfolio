@@ -81,7 +81,12 @@ export default function HomePage() {
               </button>
             </Link>
 
-            <button className="p-4 ">About me</button>
+            
+            <Link href="/about">
+              <button className="transition ease-in-out delay-75 mt-10 p-2 rounded-sm border border-white w-full xl:w-36 hover:bg-white hover:text-primary">
+                See projects
+              </button>
+            </Link>
           </div>
         </div>
 
