@@ -11,13 +11,11 @@ interface Props {
 async function getData(id: string): Promise<Project | undefined> {
   const file = await fs.readFile(process.cwd() + "/app/data.json", "utf8");
   const data: Data = JSON.parse(file);
-  const project = data.projects.find((item) => item.id === id);
-
-  return project;
+  return data.projects.find((item) => item.id === id);
 }
 
 export default async function ProjectPage({ params }: Props) {
-  const { id } = await params;
+  const { id } = await params; 
   const project = await getData(id);
 
   if (!project) return notFound();

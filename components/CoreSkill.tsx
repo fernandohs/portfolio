@@ -8,7 +8,7 @@ interface Props  {
 export const CoreSkill = ({url, title}: Props) => {
   return (
     <div>
-      <Image src={url} alt="Core Skill" width="130" height="130" />
+      <Image src={`/skills${url}`} alt="Core Skill" width="130" height="130" />
       <h1 className="text-center capitalize mt-3">
         {title}
       </h1>
