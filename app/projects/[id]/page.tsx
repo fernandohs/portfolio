@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import { ContactBanner } from '@/components';
 
 interface Props {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }
 
 async function getData(id: string): Promise<Project | undefined> {
