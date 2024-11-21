@@ -39,7 +39,7 @@ const AboutPage = () => {
             My expertise spans educational platforms, ERP, and CRM systems, and
             I bring strong communication, organizational, and leadership skills
             to every project. Whether collaborating with a team or working
-            independently, I’m driven by a user-first approach to create
+            independently, I&apos;m driven by a user-first approach to create
             meaningful, impactful digital experiences.
           </p>
         </div>

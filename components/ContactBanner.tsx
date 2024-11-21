@@ -4,8 +4,8 @@ export const ContactBanner = () => {
       <h1 className="text-2xl  xl:text-4xl my-5">Let&apos;s talk!</h1>
 
       <p className="w-3/4 xl:w-[600px] text-center">
-        Have a project or idea you’d like to bring to life? Let’s work together
-        to create innovative and impactful digital solutions. I’d love to hear
+        Have a project or idea you&apos;d like to bring to life? Let&apos;s work together
+        to create innovative and impactful digital solutions. I&apos;d love to hear
         from you!
       </p>
 
