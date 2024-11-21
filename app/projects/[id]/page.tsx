@@ -15,8 +15,8 @@ interface Props {
 async function getData(id: string): Promise<Project | undefined> {
   const isDevelopment = process.env.NODE_ENV === "development";
   const filePath = isDevelopment
-    ? process.cwd() + "/app/data.json" // Ruta local en desarrollo
-    : `${process.env.NEXT_PUBLIC_BASE_URL}/data.json`; // URL remota en producción
+    ? process.cwd() + "/public/data.json"
+    : `${process.env.NEXT_PUBLIC_BASE_URL}/data.json`;
 
   console.log(process.env.NEXT_PUBLIC_BASE_URL)
   console.log('env', isDevelopment)

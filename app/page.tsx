@@ -84,7 +84,7 @@ export default function HomePage() {
             
             <Link href="/about">
               <button className="transition ease-in-out delay-75 mt-10 p-2 rounded-sm border border-white w-full xl:w-36 hover:bg-white hover:text-primary">
-                See projects
+                About me
               </button>
             </Link>
           </div>
